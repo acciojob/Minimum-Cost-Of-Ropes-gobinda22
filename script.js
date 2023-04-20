@@ -21,5 +21,4 @@ function calculateMinCost() {
 			arr.sort(function (a,b) { return a-b});
 		}
 	    document.getElementById("result").innerHTML = cost;
-        return cost;
 }  
