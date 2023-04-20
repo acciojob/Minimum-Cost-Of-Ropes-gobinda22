@@ -1,6 +1,11 @@
 function calculateMinCost() {
 	    let str = document.getElementById("rope-lengths").value;
 	    let arr = str.split(",");
+
+	    for(var i = 0; i< arr.length; i++) {
+		     arr[i] = Number(arr[i]);
+	    }
+	
 	    let n = arr.length;
         let pq = new MinHeap(n);
         for(let i = 0; i < n; i++) {
